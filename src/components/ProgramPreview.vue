@@ -35,12 +35,12 @@ const getCurrentSceneScreen = async () => {
 const onCurrentSceneChange = ({ sceneName }: { sceneName: string }) => {
   scene.value = sceneName;
 
-  // Fetch every 100ms
+  // Fetch every 500ms
   if (interval.value) {
     clearInterval(interval.value);
   }
   getCurrentSceneScreen().then(() => (isLoading.value = false));
-  interval.value = setInterval(getCurrentSceneScreen, 100);
+  interval.value = setInterval(getCurrentSceneScreen, 500);
 };
 
 const beforeCurrentSceneChange = () => {

@@ -1,11 +1,9 @@
 <template>
   <v-card class="mx-auto">
-    <div class="d-flex justify-center align-baseline">
+    <div class="d-flex justify-center">
       <v-btn-toggle :model-value="toggle" multiple style="gap: 0.5rem">
-        <v-btn icon="mdi-twitch" @click="toggleStream"> </v-btn>
-        <v-btn icon="mdi-checkbox-blank-circle" @click="toggleRecord"> </v-btn>
-        <v-btn icon="mdi-heart" @click="toggleReplay"> </v-btn>
-        <v-btn icon="mdi-camera" @click="toggleCamera"> </v-btn>
+        <v-btn icon="mdi-twitch" @click="toggleStream"></v-btn>
+        <v-btn icon="mdi-checkbox-blank-circle" @click="toggleRecord"></v-btn>
       </v-btn-toggle>
     </div>
   </v-card>
