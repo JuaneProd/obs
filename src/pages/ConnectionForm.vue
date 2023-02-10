@@ -68,7 +68,7 @@ const store = useSocketStore();
 
 const valid = ref(true); // TODO: Form validation
 const loading = ref(false);
-const hostname = ref("192.168.1.34");
+const hostname = ref("192.168.1.79");
 const port = ref("4455");
 const password = ref("1234456");
 
